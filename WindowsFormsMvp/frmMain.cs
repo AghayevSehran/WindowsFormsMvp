@@ -5,7 +5,7 @@ using System.Windows.Forms;
 namespace WindowsFormsMvp
 {
     //http://polymorphicpodcast.com/podcast/video/mv-patterns/usermessages/
-    http://polymorphicpodcast.com/shows/mv-patterns/
+    //http://polymorphicpodcast.com/shows/mv-patterns/
     public partial class frmMain : Form, IProductEditorView
     {
         private ProductEditorPresenter presenter;
