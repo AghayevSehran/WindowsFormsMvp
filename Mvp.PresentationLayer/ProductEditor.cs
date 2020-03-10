@@ -8,6 +8,7 @@ namespace Mvp.PresentationLayer
     {
         int ProductId { get; }
         string ProductDescription { get; }
+        bool IsProductSaved { set; }
         event EventHandler<EventArgs> Save;
 
     }
@@ -38,6 +39,8 @@ namespace Mvp.PresentationLayer
                 product = new Product();
                 product.Id = mView.ProductId;
                 product.Description = mView.ProductDescription;
+                product.Save();
+                mView.IsProductSaved = true;
             }
             catch (Exception ex)
             {

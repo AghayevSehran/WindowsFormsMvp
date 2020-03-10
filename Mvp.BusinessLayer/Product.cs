@@ -12,7 +12,7 @@ namespace Mvp.BusinessLayer
         public string Description { get; set; }
         public void Save()
         {
-
+            throw new ApplicationException();
         }
     }
 }
